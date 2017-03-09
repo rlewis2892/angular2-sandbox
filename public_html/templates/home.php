@@ -1,8 +1,17 @@
-<section class="welcome">
+<header class="navbar-fixed-top">
 	<div class="container">
-		<div class="jumbotron text-center">
-			<h1><i class="fa fa-bolt"></i> Welcome to the Angular 2 Sandbox!</h1>
-			<p class="lead">This is where we destroy your front end. :D</p>
+		<h1>Angular Google Map Demo</h1>
+	</div>
+</header>
+
+<div id="map-wrapper">
+	<google-map></google-map>
+</div>
+
+<footer class="navbar-fixed-bottom">
+	<div class="container">
+		<div class="text-center">
+			This is a footer. :P
 		</div>
 	</div>
-</section>
+</footer>
