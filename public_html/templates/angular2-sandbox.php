@@ -1,3 +1,3 @@
-<div class="sfooter-content">
+<div>
 	<router-outlet></router-outlet>
 </div>

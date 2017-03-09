@@ -13,7 +13,7 @@ if(session_status() !== PHP_SESSION_ACTIVE) {
 
 		<title>Angular 2 Sandbox</title>
 	</head>
-	<body class="sfooter">
+	<body>
 		<!-- This custom tag much match your Angular @Component selector name in app/app.component.ts -->
 		<angular2-sandbox>Loading&hellip;</angular2-sandbox>
 	</body>
