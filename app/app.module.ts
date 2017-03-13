@@ -1,6 +1,6 @@
 import {NgModule, ApplicationRef} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
 import {AppComponent} from "./app.component";
 
@@ -13,7 +13,10 @@ import {allAppComponents, appRoutingProviders, routing} from "./app.routes";
 const moduleDeclarations = [AppComponent];
 
 @NgModule({
-	imports:      [BrowserModule, FormsModule, HttpModule, routing, CommonModule, AgmCoreModule.forRoot({apiKey: 'AIzaSyCQcLemUhUYrUpLF_G3EJ_AoFTN-YXtfp4'})],
+	imports:      [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, routing, CommonModule, AgmCoreModule.forRoot({
+		apiKey: 'AIzaSyCQcLemUhUYrUpLF_G3EJ_AoFTN-YXtfp4',
+		libraries: ["places"]
+	})],
 	declarations: [...moduleDeclarations, ...allAppComponents],
 	bootstrap:    [AppComponent],
 	providers:    [appRoutingProviders]
