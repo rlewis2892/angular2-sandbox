@@ -8,7 +8,9 @@
 </header>
 
 <div id="map-wrapper">
-	<google-map></google-map>
+	<sebm-google-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
+		<sebm-google-map-marker [latitude]="latitude" [longitude]="longitude"></sebm-google-map-marker>
+	</sebm-google-map>
 </div>
 
 <footer class="navbar-fixed-bottom">
