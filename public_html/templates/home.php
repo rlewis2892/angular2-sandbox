@@ -1,6 +1,6 @@
 <header class="navbar-fixed-top">
 	<div class="container">
-		<h1>Angular Google Map Demo</h1>
+		<h1>Angular Google Map Demo. Now with Autocomplete! :D</h1>
 		<div class="form-group">
 			<input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl">
 		</div>
