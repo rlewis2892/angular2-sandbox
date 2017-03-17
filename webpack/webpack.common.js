@@ -30,6 +30,10 @@ module.exports = {
 				loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?minimize=true' })
 			},
 			{
+				test: /\.js$/,
+				loader: 'script-loader'
+			},
+			{
 				test: /\.ts$/,
 				loaders: ['awesome-typescript-loader']
 			}
